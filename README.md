@@ -50,7 +50,7 @@ The repository can be packaged as a single Windows executable with Flet/PyInstal
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install pyinstaller
-.\.venv\Scripts\flet.exe pack main.py -n PY2PY --distpath dist -y
+.\.venv\Scripts\flet.exe pack main.py -n PY2PY --distpath dist -y --add-data "assets;assets"
 ```
 
 The output is `dist\PY2PY.exe`. Build Windows releases on Windows, macOS releases on macOS, and Linux releases on Linux.
