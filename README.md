@@ -49,7 +49,7 @@ Device discovery is visible to other devices on the selected LAN. Only accept tr
 The repository can be packaged as a single Windows executable with Flet/PyInstaller:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install pyinstaller
+.\.venv\Scripts\python.exe -m pip install pyinstaller -r requirements.txt
 .\.venv\Scripts\flet.exe pack main.py -n PY2PY --distpath dist -y --add-data "assets;assets"
 ```
 
