@@ -1,3 +1,31 @@
-flet==0.85.3
-cryptography
-zeroconf
+altgraph==0.17.5
+anyio==4.14.2
+certifi==2026.7.22
+cffi==2.1.0
+cryptography==49.0.0
+flet==0.86.4
+flet-contrib==2024.12.3
+flet-desktop==0.86.4
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.18
+ifaddr==0.2.0
+markdown-it-py==4.2.0
+mdurl==0.1.2
+msgpack==1.2.1
+oauthlib==3.3.1
+packaging==26.2
+pefile==2024.8.26
+# Editable install with no version control (py2py==0.1.0)
+-e c:\users\fbant\downloads\pentesting\proiecte\py2py - copie
+pycparser==3.0
+Pygments==2.20.0
+pyinstaller==6.21.0
+pyinstaller-hooks-contrib==2026.6
+pywin32-ctypes==0.2.3
+repath==0.9.0
+rich==15.0.0
+setuptools==83.0.0
+six==1.17.0
+zeroconf==0.150.0
