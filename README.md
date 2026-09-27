@@ -18,8 +18,9 @@ Python 3.10 or newer is recommended.
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe main.py
+.\.venv\Scripts\activate
+pip install -e .
 ```
 
 On macOS/Linux, activate or invoke the virtual environment with the platform-appropriate path.
@@ -44,13 +45,31 @@ Important: users must compare the verification code for this protection against 
 
 Device discovery is visible to other devices on the selected LAN. Only accept transfers from people and devices you trust.
 
+## Download the executable
+https://drive.google.com/drive/folders/1E1i1axHBtoP_gJClfdZwo1mEy2WwwDSs?usp=drive_link
+
+Installer SHA256 Hash: 63cd3f1df16b3b1b2a8b8ad327a157af3681f7dde478fe611295257c64b1e6e1
+Portable exe SHA256 Hash: 7f99376d3a550479f50bf4b663a90187d7ed1fbcabee39eb97d56c0b5ffe77c0
+
 ## Build a Windows one-file executable
 
 The repository can be packaged as a single Windows executable with Flet/PyInstaller:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install pyinstaller -r requirements.txt
 .\.venv\Scripts\flet.exe pack main.py -n PY2PY --distpath dist -y --add-data "assets;assets"
 ```
 
 The output is `dist\PY2PY.exe`. Build Windows releases on Windows, macOS releases on macOS, and Linux releases on Linux.
+
+## Build a Windows installer
+
+First build the executable as described above. Install [Inno Setup](https://jrsoftware.org/isinfo.php), then compile the installer from the project directory:
+
+```powershell
+ISCC.exe .\installer.iss
+```
+
+The installer is written to `installer\PY2PY-Setup.exe`. It installs the contents of `dist` under `C:\Program Files\PY2PY`, adds a Start Menu shortcut using `assets\final.ico`, and registers an uninstaller in Windows Installed apps. Uninstalling removes the installed application, shortcut, and the `PY2PY TCP` and `PY2PY UDP (Discovery)` Windows Firewall rules; it does not delete user data outside the installation folder.
+
+
+
