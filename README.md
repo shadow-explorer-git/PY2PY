@@ -46,10 +46,13 @@ Important: users must compare the verification code for this protection against 
 Device discovery is visible to other devices on the selected LAN. Only accept transfers from people and devices you trust.
 
 ## Download the executable
-https://drive.google.com/drive/folders/1E1i1axHBtoP_gJClfdZwo1mEy2WwwDSs?usp=drive_link
+```https://drive.google.com/drive/folders/1E1i1axHBtoP_gJClfdZwo1mEy2WwwDSs?usp=drive_link```
 
-Installer SHA256 Hash: 63cd3f1df16b3b1b2a8b8ad327a157af3681f7dde478fe611295257c64b1e6e1
-Portable exe SHA256 Hash: 7f99376d3a550479f50bf4b663a90187d7ed1fbcabee39eb97d56c0b5ffe77c0
+## Installer SHA256 Hash: 
+```63cd3f1df16b3b1b2a8b8ad327a157af3681f7dde478fe611295257c64b1e6e1```
+
+## Portable exe SHA256 Hash: 
+```7f99376d3a550479f50bf4b663a90187d7ed1fbcabee39eb97d56c0b5ffe77c0```
 
 ## Build a Windows one-file executable
 
